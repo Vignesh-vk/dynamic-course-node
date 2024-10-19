@@ -1,12 +1,12 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const connectDB = require('../config/db.js');
-const courseRoutes = require('../routes/courseRoute.js');
-const sectionRoutes = require('../routes/sectionRoute.js');
-const lessonRoutes = require('../routes/lessonRoutes.js');
-const quizRoutes = require('../routes/quizRoute.js');
-const authRoutes = require('../routes/authRoute.js');
+const connectDB = require('./config/db.js');
+const courseRoutes = require('./routes/courseRoute.js');
+const sectionRoutes = require('./routes/sectionRoute.js');
+const lessonRoutes = require('./routes/lessonRoutes.js');
+const quizRoutes = require('./routes/quizRoute.js');
+const authRoutes = require('./routes/authRoute.js');
 
 const dotenv = require('dotenv');
 
