@@ -23,6 +23,10 @@ app.use(cors({
 
 app.use(bodyParser.json());
 
+app.get('/', (req, res) => {
+    res.send('Welcome to Dynamic course management!');
+});
+
 app.use('/api/auth', authRoutes);
 app.use('/api/courses', courseRoutes);
 app.use('/api/sections', sectionRoutes);
